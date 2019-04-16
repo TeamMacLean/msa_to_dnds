@@ -24,7 +24,7 @@ phylip.close()
 
 cml=codeml.Codeml(alignment="MSA.phy", tree=treefile, out_file = outputfile)
 
-cml.set_options(seqtype=3)	# set this option bases on codon or aminoacid, values accepted 1,2 or 3
+cml.set_options(seqtype=1)	# set this option bases on codon or aminoacid, values accepted 1,2 or 3
 cml.set_options(model=3)
 cml.set_options(NSsites="3")
 cml.set_options(ncatG="3")
